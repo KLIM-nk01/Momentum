@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* height: 100vh; */
+    color: white;
+   /* background-size: auto; */
+   background-repeat: no-repeat;
+   background-position: top center;
+   transition: background-image 1s ease-in-out 0.3s;
+  
+ 
+
+}
+
+#time{
+    font-size: 6rem;
+    margin-top: 5vw;
+}
+#date{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+h1{
+   
+    margin-bottom: 0.5rem;
+}
+
+h2{
+    margin-bottom: 0.5rem;
+    
+}
+i{
+    width:  3vw;
+}
+
+
+
+.calendar{
+    position: absolute;
+    display: none !important;
+    width: 200px;
+    height: 200px;
+    background-color: dimgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+.mon{
+    width: 100%;
+    height: 3vw;
+    background-color: dodgerblue;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dy{
+    width: 90%;
+    height: 6vw;
+    background-color: dodgerblue;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yer{
+    width: 50%;
+    height: 2vw;
+    background-color: dodgerblue;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-date{
+
+width: 200px;
+height: 50px;
+border-radius: 25px;
+background-color: rgb(10, 245, 2);
+}
+
+#button-date:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#background-slider{
+    position:absolute;
+    bottom: 15px;
+    right: 15px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 130px;
+    height: 35px;
+    background-color: #FDDCC4;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+}
+
+#background-slider:hover{
+    opacity: 0.7;
+}
+
+/* .city{
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+} */
+
+.weather{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 160px;
+    /* height: 160px; */
+    /* background: linear-gradient(to left, #58b6f0, #3e50cc); */
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    color: white;
+    
+  border-radius: 10px;
+}
+
+.weather-icon {
+    font-size: 4vw;
+    color: white;
+  }
+
+.icon-temp{
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.weather-description{
+    /* height: 20%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.quote {
+    /* display: none; */
+    /* position: absolute; */
+    bottom: 0;
+    /* left:0; */
+    width: 30vw;
+    margin-top: 50px;
+    font: 1.2rem Georgia, serif;
+    height: fit-content;
+    /* hbackground: #FDDCC4   ; */
+    background-color: inherit;
+    padding: 0.5em;
+  
+    /* margin: 16px 16px 30px 16px; */
+   /* color: black; */
+   /* font-size: calc(1rem + 1.23vw); */
+    
+    /* border-left: 5px solid;
+    border-color: #337AB7; */
+  }
+
+  
+.closed {
+    border-left: 5px solid;
+    border-color: #337AB7;
+}
+
+
+
+  /* .quote figcaption, */
+  /* .quote blockquote {
+    margin: 1em;
+  } */
+  /* .quote figcaption {
+    text-align: right;
+  } */
+  .btn {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    background-image: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(.8);
+    margin: 10px;
+  }
+  .btn:hover {
+    filter: grayscale(.2);
+  }
+  .btn:active,
+  .btn:focus {
+    outline: 0;
+  }
+  .btn:active{
+    transform: scale(1.02)
+  }
+
+  .btn-author{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  
+  @media(max-width:890px){
+    #time{
+        font-size: 15vw;
+    }
+    #date{
+        font-size: 3vw;
+        margin-bottom: 2rem;
+    }
+
+    
+h1{
+    margin-bottom: 2vw;
+    
+}
+
+h2{
+    font-size: 5vw;
+    margin-bottom: 0.5rem;
+    
+}
+i{
+    width: 50px;
+}
+
+span{
+    font-size: 5vw;
+}
+
+.quote{
+    font-size: 3vw;
+    margin-top: 4vw;
+}
+
+.weather{
+         font-size: 2vw;
+    
+        position: relative;
+    
+}
+  }
+
+@media(max-width:450px)
+{
+   .weather{
+       position: relative;
+   }
+
+   #background-slider{
+    width: 100px !important;
+   }
+}
